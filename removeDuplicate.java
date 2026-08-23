@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-public class RemoveDuplicate {
+public class removeDuplicate {
 
     // Function to remove duplicates
     public static int removeDuplicates(int[] nums) {
