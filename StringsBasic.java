@@ -3,16 +3,27 @@ import java.util.Scanner;
 
 public class StringsBasic {
     public static void main(String[] args) {
+
+        int num = 5123;
+        String str = String.valueOf(num);
+        System.out.println(num+1); // adds up
+        System.out.println(str + 1); //concatinate
+//
+//        String str = "My name is Pawan";
+//        //begin index = inclusive
+//        //ending index = exclusive
+//        System.out.println(str.substring(3,7));
+//        System.out.println(str.contains("Pawan"));
         //empty = lenght 0
         //blank = empty or sirf space hai strimng
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Provide the String Contents");
-        String str = sc.nextLine(); //whole line
-        System.out.println("Value of nextline: " + str);
-
-        System.out.println("Provide the String Contents");
-        String str2 = sc.next();//only till space
-        System.out.println("Value of next: " + str2);
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Provide the String Contents");
+//        String str = sc.nextLine(); //whole line
+//        System.out.println("Value of nextline: " + str);
+//
+//        System.out.println("Provide the String Contents");
+//        String str2 = sc.next();//only till space
+//        System.out.println("Value of next: " + str2);
 //        String name1 = "Love";
 //        String name2 = "LOVE";
 //        if(name1.equals(name2)){
