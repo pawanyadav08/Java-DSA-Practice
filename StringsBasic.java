@@ -4,11 +4,30 @@ import java.util.Scanner;
 public class StringsBasic {
     public static void main(String[] args) {
 
-        int num = 5123;
-        String str = String.valueOf(num);
-        System.out.println(num+1); // adds up
-        System.out.println(str + 1); //concatinate
+
+
+        //split -> output -> String array
+//        String input = "My,name,is,pawan";
+//        String[] words = input.split(","); // important
+//        for(String str : words){
+//            System.out.println(str);
+//        }
+//        String name = "Pawan";
+//        char[] crr = name.toCharArray();
 //
+//        for(char ch : crr){
+//            System.out.println("Value of char: " + ch);
+//        }
+
+//        String name = "Rana Love babbar";
+//        System.out.println(name.startsWith("Rana L"));
+//        System.out.println(name.endsWith("ove babbar"));
+
+//        int num = 5123;
+//        String str = String.valueOf(num);
+//        System.out.println(num+1); // adds up
+//        System.out.println(str + 1); //concatinate
+////
 //        String str = "My name is Pawan";
 //        //begin index = inclusive
 //        //ending index = exclusive
