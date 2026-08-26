@@ -4,7 +4,9 @@ import java.util.Scanner;
 public class StringsBasic {
     public static void main(String[] args) {
 
-
+        String name = "Pawan";
+        name = name.replace('P','R');
+        System.out.println(name);
 
         //split -> output -> String array
 //        String input = "My,name,is,pawan";
