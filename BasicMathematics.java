@@ -61,9 +61,23 @@ public class BasicMathematics {
 //        }
 //        return true;
     }
+
+    static int getGCD(int a, int b){
+        //gcd(a,b) = gcd(b, a%b);
+
+        while(b != 0){
+            int oldValueOfb = b;
+            b = a%b;
+            a = oldValueOfb;
+        }
+        //jab mera b 0 hoga , tab a ki place pr gcd milega
+        int ans = a;
+        return ans;
+    }
     public static void main(String[] args) {
-        int num = 12;
-        System.out.println(isPrimeOrNot(num));
+        System.out.println(getGCD(18,12));
+//        int num = 12;
+//        System.out.println(isPrimeOrNot(num));
 //          boolean ans = palindromeNum(12344321);
 //        System.out.println(ans);
         //int num = 1234;
