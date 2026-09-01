@@ -46,9 +46,26 @@ public class BasicMathematics {
             return false;
         }
     }
+
+    static boolean isPrimeOrNot(int num){
+        for(int i = 2 ; i*i <= num ; i++){
+            if(num%i == 0){
+                return false;
+            }
+        }
+        return true;
+//        for(int i = 2 ; i <= num -1 ; i++){
+//            if(num%i == 0){
+//                return false;
+//            }
+//        }
+//        return true;
+    }
     public static void main(String[] args) {
-          boolean ans = palindromeNum(12344321);
-        System.out.println(ans);
+        int num = 12;
+        System.out.println(isPrimeOrNot(num));
+//          boolean ans = palindromeNum(12344321);
+//        System.out.println(ans);
         //int num = 1234;
 //        palindromeNum(num);
 //        int revNum = reverseNum(num);
