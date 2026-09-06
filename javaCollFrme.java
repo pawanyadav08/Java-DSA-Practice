@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class javaCollFrme {
     public static void main(String[] args) {
@@ -26,8 +27,18 @@ public class javaCollFrme {
         System.out.println(list);
         list.removeAll(list2);
         System.out.println(list);
+        System.out.println(list.size());
+        System.out.println("Printing list2 :" + list2);
+        list2.clear();
+        System.out.println(list2.size());
 //        List<Integer> list = new ArrayList<>();
 //        Collection<Integer> collection = new ArrayList<>();
+
+        //i want to traverse list using iterator
+        Iterator<Integer> iterator = list.iterator();
+        while(iterator.hasNext()){
+            System.out.println("Element: " + iterator.next());
+        }
 
     }
 }
