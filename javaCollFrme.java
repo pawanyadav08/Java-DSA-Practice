@@ -40,5 +40,24 @@ public class javaCollFrme {
             System.out.println("Element: " + iterator.next());
         }
 
+        ArrayList<Integer> list3 = new ArrayList<>();
+        list3.add(11);
+        list3.add(12);
+        list3.add(14);
+        System.out.println(list3.get(0));
+        System.out.println("before set: "+ list3);
+        list3.set(0,100);
+        System.out.println("after set : " + list3);
+
+        //toArray
+        Object[] arr = list3.toArray();
+        for(Object obj: arr){
+            System.out.println(obj);
+        }
+
+        //contains
+        System.out.println(list3.contains(100));
+
+
     }
 }
