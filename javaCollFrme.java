@@ -67,13 +67,42 @@ public class javaCollFrme {
         System.out.println("Printing Entire NewList : " +newList);
         LinkedList<Integer> marks = new LinkedList<>();
         System.out.println(marks.isEmpty());
+        list.add(30);
+        list.add(24);
+        list.add(30);
+        System.out.println("Printing orignal List: " + list);
+        System.out.println(list.indexOf(40));
+        System.out.println(list.lastIndexOf(30));
 
         //IndexOf
 //        System.out.println(newList.indexOf(40));
 
+        //addFirt and Add last
+        list.remove(3);
+        list.remove(3);
+        list.remove(3);
+        list.remove(3);
+        System.out.println("printing orignal list : " + list);
+        list.addFirst(101);
+        System.out.println(list);
+        list.removeFirst();
 
+        System.out.println(list);
 
+        LinkedList<Integer> ll = new LinkedList<>();
+        ll.add(10);
+        System.out.println(ll);
+        ll.addFirst(1);
+        System.out.println(ll);
+        ll.addLast(101);
+        System.out.println(ll);
 
+        System.out.println(ll.getFirst());
+        System.out.println(ll.getLast());
+        System.out.println(ll.peek());
+        System.out.println(ll);
+        System.out.println(ll.poll());
+        System.out.println(ll);
 
     }
 }
