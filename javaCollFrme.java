@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class javaCollFrme {
@@ -57,6 +58,22 @@ public class javaCollFrme {
 
         //contains
         System.out.println(list3.contains(100));
+
+        list.add(12);
+        list.add(6);
+        System.out.println("printing the entire list: "+ list);
+        //sort
+        Collections.sort(list);
+        System.out.println("Printing Entire List : " + list);
+
+        ArrayList<Integer> newList = (ArrayList<Integer>)list.clone();
+        System.out.println("Printing Entire NewList : " +newList);
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity(100);
+        System.out.println(marks.isEmpty());
+
+        //IndexOf
+        System.out.println(newList.indexOf(40));
 
 
     }
