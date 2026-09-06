@@ -104,5 +104,11 @@ public class javaCollFrme {
         System.out.println(ll.poll());
         System.out.println(ll);
 
+
+
+
+        //vector - it is like arraylist which is a resisable array
+        //so it is recommended to use arraylist instead of vector
+        // because it is less efficient
     }
 }
