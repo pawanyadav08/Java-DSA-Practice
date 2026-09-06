@@ -1,14 +1,11 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
+import java.util.*;
 
 public class javaCollFrme {
     public static void main(String[] args) {
         //list or collection -> interfaces
 
-        //ArrayList -> concrete class
-        ArrayList<Integer> list = new ArrayList<>();
+        //LinkedList -> concrete class
+        LinkedList<Integer> list = new LinkedList<>();
         list.add(10);
         list.add(20);
         list.add(30);
@@ -19,7 +16,7 @@ public class javaCollFrme {
         list.remove(0);
         System.out.println(list);
 
-        ArrayList<Integer> list2 = new ArrayList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
         list2.add(101);
         list2.add(102);
         list2.add(20);
@@ -32,8 +29,8 @@ public class javaCollFrme {
         System.out.println("Printing list2 :" + list2);
         list2.clear();
         System.out.println(list2.size());
-//        List<Integer> list = new ArrayList<>();
-//        Collection<Integer> collection = new ArrayList<>();
+//        List<Integer> list = new LinkedList<>();
+//        Collection<Integer> collection = new LinkedList<>();
 
         //i want to traverse list using iterator
         Iterator<Integer> iterator = list.iterator();
@@ -41,7 +38,7 @@ public class javaCollFrme {
             System.out.println("Element: " + iterator.next());
         }
 
-        ArrayList<Integer> list3 = new ArrayList<>();
+        LinkedList<Integer> list3 = new LinkedList<>();
         list3.add(11);
         list3.add(12);
         list3.add(14);
@@ -66,14 +63,16 @@ public class javaCollFrme {
         Collections.sort(list);
         System.out.println("Printing Entire List : " + list);
 
-        ArrayList<Integer> newList = (ArrayList<Integer>)list.clone();
+        LinkedList<Integer> newList = new LinkedList<>(list);
         System.out.println("Printing Entire NewList : " +newList);
-        ArrayList<Integer> marks = new ArrayList<>();
-        marks.ensureCapacity(100);
+        LinkedList<Integer> marks = new LinkedList<>();
         System.out.println(marks.isEmpty());
 
         //IndexOf
-        System.out.println(newList.indexOf(40));
+//        System.out.println(newList.indexOf(40));
+
+
+
 
 
     }
