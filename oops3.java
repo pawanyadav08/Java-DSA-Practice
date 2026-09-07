@@ -1,4 +1,4 @@
-class Student {
+class Students {
     private String name;
     private int age;
 
@@ -15,7 +15,7 @@ class Student {
 }
 public class oops3 {
     public static void main(String[] args) {
-      Student s = new Student();
+      Students s = new Students();
       s.setName("Ravi");
       s.setAge(20);
       System.out.println(s.getName() + " - " + s.getAge());  
