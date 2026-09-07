@@ -1,7 +1,7 @@
-import java.util.LinkedList;
+import java.util.Stack;
 public class arraylist {
     public static void main(String[] args){
-        LinkedList<String> cars = new LinkedList<String>();
+        Stack<String> cars = new Stack<String>();
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
