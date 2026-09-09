@@ -1,5 +1,7 @@
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class HashMapBasics {
     public static void main(String[] args) {
@@ -25,6 +27,19 @@ public class HashMapBasics {
         System.out.println(table.getOrDefault("usa","NONE"));
         System.out.println(table.containsKey("im"));
         System.out.println(table.containsValue("United States of America"));
+        System.out.println(table);
+
+        table.replace("in","indonesia");
+        System.out.println(table);
+
+        Set<String> keyset = table.keySet();
+        System.out.println(keyset);
+
+        Collection<String> valueset = table.values();
+        System.out.println(valueset);
+
+        Set<Map.Entry<String,String>> entrySet = table.entrySet();
+        System.out.println("Printing Enties : " + entrySet);
 //        System.out.println(table.size());
     }
 }
