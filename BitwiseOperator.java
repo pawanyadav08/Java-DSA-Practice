@@ -41,7 +41,25 @@ public class BitwiseOperator {
 //            System.out.println("Power of 2 nahi hai");
 //        }
 //        System.out.println(3 << 2);
-        int n = 10;
-        System.out.println((n&(-n)));
+//        int n = 10;
+////        System.out.println((n&(-n)));
+//        int n = 10;
+//        int count = 0;
+//
+//        while(n > 0){
+//            count += n & 1;
+//            n = n >> 1;
+//        }
+//        System.out.println(count);
+
+        int[] arr = {1,2,3,5};
+        int xor = 0;
+        for (int i = 1 ; i <= 5; i++){
+            xor ^= i;
+        }
+        for(int num : arr){
+            xor ^= num;
+        }
+        System.out.println(xor);
     }
 }
