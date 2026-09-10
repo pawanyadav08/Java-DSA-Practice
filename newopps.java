@@ -2,7 +2,7 @@ class Car {
     String brand;
     int speed;
     void drive() {
-        System.out.println(brand + "is driving at " + speed + "km/h");
+        System.out.println(brand + " is driving at " + speed + "km/h");
     }
 }
 public class newopps {
@@ -10,6 +10,6 @@ public class newopps {
        Car c = new Car();
        c.brand ="Toyota";
        c.speed = 100;
-       c.drive(); 
+       c.drive();
     }
 }
