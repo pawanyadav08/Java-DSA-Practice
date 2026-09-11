@@ -43,10 +43,29 @@ public class ArrayQUESTIONS {
         }
         return maxi;
     }
+
+    static int[] getPosNegSum(int arr[]){
+        int posSum = 0;
+        int negSum = 0;
+
+        for(int i = 0; i<arr.length ; i++){
+            if(arr[i] > 0){
+                posSum += arr[i];
+            }
+            else {
+                negSum += arr[i];
+            }
+        }
+        int ans[] = {posSum, negSum};
+        return ans; //tc = O(n) sc = O(1)
+    }
     public static void main(String[] args) {
 
-        int arr[] = {1,3,5,7,9};
-        System.out.println(getMaximun(arr));
+        int arr[] = {2,-3,-5,-7,9};
+        int ans[] = getPosNegSum(arr);
+        System.out.println("Positive Sum = " + ans[0]);
+        System.out.println("Negative Sum = " + ans[1]);
+//        System.out.println(getMaximun(arr));
 //        boolean ans = findTarget(arr, 9);
 //        System.out.println(ans);
 //        int[] arr = {2,4,3,3};
