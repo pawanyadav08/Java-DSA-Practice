@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class ArrayQuestionPart2 {
 
     static void reverseArray(int arr[]){
@@ -46,9 +48,20 @@ public class ArrayQuestionPart2 {
             }
         }
     }
+
+    static void getMode(int arr[]){
+        HashMap<Integer , Integer> freq = new HashMap<>();
+        for(int num : arr){
+            freq.put(num , freq.getOrDefault(num,0) + 1);
+        }
+        for (int i : freq.keySet()){
+            System.out.println(i + "->" + freq.get(i));
+        }
+    }
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5};
-        printAlternate(arr);
+        int arr[] = {1,2,2,3,3,3,4,4,5,5,5,5,5};
+        getMode(arr);
+//        printAlternate(arr);
 //        reverseArray(arr);
 //        shiftBy1(arr);
 //        for(int a: arr){
